@@ -4,12 +4,12 @@
 .data
 	text1: .asciiz "hello"
 	text2: .asciiz " world!\n"
-    
+
 .text
 
 	.macro print_string
-		li $v0, 4 	# prep for print string
-		syscall		# syscall
+		li $v0, 4 	    # prep for print string
+		syscall		    # syscall
 	.end_macro
 	
 	main:
